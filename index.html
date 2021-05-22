@@ -8,10 +8,15 @@
       body {
         font-family: sans-serif;
         font-size: 1em;
-        color: #333;
+        color: #fefefe;
         max-width: 50rem;
         margin: auto;
         padding: 0 1rem;
+        background-color: #333;
+      }
+
+      a {
+        color: #fefefe;
       }
 
       .card-container {
@@ -23,10 +28,12 @@
         flex-direction: column;
         padding: 1rem;
         border: 1px solid #555;
+        color: #333;
       }
 
       .card .title {
         font-weight: bold;
+        padding: 1rem 0;
       }
 
       .card-container .card:not(:last-child) {
@@ -39,14 +46,14 @@
         justify-content: space-between;
       }
 
-      .pink {
+      .pink .title {
         background-color: #ffd7d7;
-        border: 1px solid #e5c1c1;
+        /* border: 1px solid #e5c1c1; */
       }
 
-      .yellow {
+      .yellow .title {
         background-color: #fffdc6;
-        border: 1px solid #e5e3b2;
+        /* border: 1px solid #e5e3b2; */
       }
     </style>
   </head>
@@ -60,20 +67,20 @@
 
       <div class="card-container">
         <div class="card pink">
-          <p class="title">TodoMVC</p>
+          <div class="title">TodoMVC</div>
           <div class="description">The classic TodoMVC.</div>
-          <p class="links">
+          <div class="links">
             <a href="/crank-examples/todomvc">Demo</a>
             <a href="https://github.com/waynebaylor/crank-examples/tree/main/todomvc">Source</a>
-          </p>
+          </div>
         </div>
         <div class="card yellow">
-          <p class="title">Advanced Infinite Scroll</p>
+          <div class="title">Advanced Infinite Scroll</div>
           <div class="description">Infinite scroll using tombstones and data caching.</div>
-          <p class="links">
+          <div class="links">
             <a href="/crank-examples/advanced-infinite-scroll">Demo</a>
             <a href="https://github.com/waynebaylor/crank-examples/tree/main/advanced-infinite-scroll">Source</a>
-          </p>
+          </div>
         </div>
       </div>
     </section>
