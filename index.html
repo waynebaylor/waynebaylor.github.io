@@ -7,23 +7,67 @@
     <style type="text/css">
       body {
         font-family: sans-serif;
+        font-size: 1em;
+        color: #333;
+        max-width: 50rem;
+        margin: auto;
+        padding: 0 1rem;
+      }
+
+      .card-container {
+        display: flex;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border: 1px solid #555;
+      }
+
+      .card .title {
+        font-weight: bold;
+      }
+
+      .card-container .card:not(:last-child) {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .pink {
+        background-color: #ffd7d7;
+        border: 1px solid #e5c1c1;
+      }
+
+      .yellow {
+        background-color: #fffdc6;
+        border: 1px solid #e5e3b2;
       }
     </style>
   </head>
 
   <body>
     <section>
-      <h3>Crank Examples</h3>
+      <h2>Crank Examples</h2>
+      <p>
+        <a href="https://crank.js.org/">Crank.js</a>
+      </p>
+
       <div class="card-container">
-        <div class="card">
+        <div class="card pink">
           <p class="title">TodoMVC</p>
-          <div class="description">Implementation of TodoMVC.</div>
+          <div class="description">The classic TodoMVC.</div>
           <p class="links">
             <a href="/crank-examples/todomvc">Demo</a>
             <a href="https://github.com/waynebaylor/crank-examples/tree/main/todomvc">Source</a>
           </p>
         </div>
-        <div class="card">
+        <div class="card yellow">
           <p class="title">Advanced Infinite Scroll</p>
           <div class="description">Infinite scroll using tombstones and data caching.</div>
           <p class="links">
